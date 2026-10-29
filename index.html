@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VideoSave — All Video Downloader</title>
+<meta name="description" content="Paste any social media link and download it. TikTok without watermark, YouTube preview, Instagram, Facebook, LinkedIn, X and Pinterest. No sign-up.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%237c3aed'/%3E%3Cpath d='M32 14v22m0 0l-9-9m9 9l9-9M18 44h28' stroke='white' stroke-width='5' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="top">
+<a class="brand" href="#top">
+<svg width="38" height="38" viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#7c3aed"/><path d="M32 14v22m0 0l-9-9m9 9l9-9M18 44h28" stroke="white" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+<span><b>Video<span>Save</span></b><small>All Video Downloader</small></span>
+</a>
+<nav class="nav"><a href="#top">Downloader</a><a href="#platforms">Platforms</a><a href="#how">How it works</a><a href="#faq">FAQ</a><a href="#contact">Contact</a></nav>
+</header>
+
+<main id="top">
+<section class="hero"><div class="hero-inner">
+<span class="pill">All Video Downloader — no sign-up needed</span>
+<h1>Download TikTok, YouTube,<br>Instagram, LinkedIn <span>&amp; more</span></h1>
+<p>Paste a link, we detect the platform automatically. TikTok gives you the no-watermark HD video. YouTube gives you the title, thumbnail and preview. No account needed.</p>
+<div class="tabs" id="tabs">
+<button class="active" data-p="all">All platforms</button>
+<button data-p="tiktok">TikTok</button>
+<button data-p="youtube">YouTube</button>
+<button data-p="instagram">Instagram</button>
+<button data-p="facebook">Facebook</button>
+<button data-p="linkedin">LinkedIn</button>
+<button data-p="x">X / Twitter</button>
+<button data-p="pinterest">Pinterest</button>
+</div>
+<div class="box">
+<div class="row">
+<input id="urlInput" type="url" placeholder="Paste a TikTok, YouTube, Instagram, LinkedIn link here…" autocomplete="off">
+<button id="goBtn" onclick="handleDownload()">Download ↓</button>
+</div>
+<p class="hint">Use only for your own videos, or videos you have permission to download. Keep the creator's credit when you re-post.</p>
+<div class="status" id="status"></div>
+</div>
+<div class="trust"><span>✓ No sign-up</span><span>✓ Free to use</span><span>✓ HD quality</span><span>✓ Mobile friendly</span></div>
+</div></section>
+
+<section class="result" id="result" style="display:none"></section>
+
+<section class="section" id="how">
+<h2>How it works</h2><p>Three simple steps, on phone or PC.</p>
+<div class="grid">
+<div class="step"><b>1</b><h3>Copy link</h3><p>Open the app, tap Share, then Copy link.</p></div>
+<div class="step"><b>2</b><h3>Paste here</h3><p>Paste it in the box above and tap Download.</p></div>
+<div class="step"><b>3</b><h3>Save it</h3><p>Tap the download button. On phone, if it opens in a player, tap ⋮ then Download / Save video.</p></div>
+</div>
+</section>
+
+<section class="section" id="platforms">
+<h2>Supported platforms</h2><p>One box for all of these.</p>
+<div class="grid">
+<div class="plat"><h3>🎵 TikTok</h3><p>No-watermark MP4 in HD, watermarked MP4, MP3 audio and cover image.</p></div>
+<div class="plat"><h3>▶️ YouTube</h3><p>Title, author, thumbnail and preview. YouTube has no public direct MP4 API — use YouTube Studio for your own videos.</p></div>
+<div class="plat"><h3>📸 Instagram</h3><p>Reels / posts detected. For your own posts, use Instagram's own download / export. No login is asked here.</p></div>
+<div class="plat"><h3>💼 LinkedIn</h3><p>Post / video link detected. Use LinkedIn's own download for your own videos.</p></div>
+<div class="plat"><h3>👍 Facebook</h3><p>Video / Reel link detected. Use Facebook's own save option for your own videos.</p></div>
+<div class="plat"><h3>𝕏 X / Twitter</h3><p>Post link detected, with a direct link back to the original post.</p></div>
+<div class="plat"><h3>📌 Pinterest</h3><p>Pin link detected, with a direct link back to the original pin.</p></div>
+</div>
+</section>
+
+<section class="section" id="faq">
+<h2>FAQ</h2><p>Quick answers before you download.</p>
+<div class="faq">
+<details open><summary><b>Does TikTok download really work without watermark?</b></summary><p>Yes, for public TikTok videos. This site uses the public tikwm API, the same kind of endpoint many TikTok downloaders use, to get the HD no-watermark file TikTok itself serves.</p></details>
+<details><summary><b>Why doesn't YouTube give a direct MP4 here?</b></summary><p>YouTube does not offer a public download API. Any site that promises a direct YouTube MP4 is using an unofficial backend that breaks often. This site is honest about that: it shows the official preview, and for your own videos you can download from YouTube Studio, or use yt-dlp locally.</p></details>
+<details><summary><b>Do I need an account?</b></summary><p>No. No sign-up, no password, and no private accounts. Private or login-only posts cannot be downloaded here, by design.</p></details>
+<details><summary><b>Can I re-upload someone else's video?</b></summary><p>Only with their permission. Removing a watermark does not remove copyright. Keep the creator's credit, or you risk a copyright block.</p></details>
+</div>
+</section>
+
+<section class="section" id="contact">
+<h2>Contact us</h2><p>Questions, a broken link, or a platform request? Write to us.</p>
+<div class="contact-card">
+<div>
+<h3>📧 Email us</h3>
+<p><a href="mailto:muhammadsanwal3620@gmail.com">muhammadsanwal3620@gmail.com</a></p>
+<p><b>Muhammad Sanwal</b><br>VideoSave — All Video Downloader</p>
+<p style="color:#cbd5e1;font-size:14px">Please include the link you tried and what happened, so we can help quickly. Do not send passwords or private account details.</p>
+</div>
+<div>
+<h3>✉️ Send a message</h3>
+<form onsubmit="sendContact(event)">
+<input id="cName" type="text" placeholder="Your name" required>
+<input id="cEmail" type="email" placeholder="Your email" required>
+<textarea id="cMsg" rows="4" placeholder="Your message…" required></textarea>
+<button type="submit">Send message →</button>
+</form>
+<p id="cNote" style="font-size:13px;color:#cbd5e1"></p>
+</div>
+</div>
+</section>
+</main>
+
+<footer>
+<a href="#top">Downloader</a> • <a href="#platforms">Platforms</a> • <a href="#faq">FAQ</a> • <a href="#contact">Contact</a>
+<p style="margin:12px 0 0">© 2026 VideoSave by Muhammad Sanwal. For your own content and content you have permission to use.<br>Contact: <a href="mailto:muhammadsanwal3620@gmail.com" style="color:#22d3ee">muhammadsanwal3620@gmail.com</a></p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

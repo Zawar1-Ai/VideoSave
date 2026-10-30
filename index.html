@@ -4,9 +4,56 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>VideoSave — All Video Downloader</title>
-<meta name="description" content="Paste any social media link and download it. TikTok without watermark, YouTube preview, Instagram, Facebook, LinkedIn, X and Pinterest. No sign-up.">
+<meta name="description" content="VideoSave — All Video Downloader. Download TikTok, YouTube, Instagram, Facebook, LinkedIn, X and Pinterest videos in MP4, 720p, 1080p, 4K and MP3. Free, no sign-up, mobile friendly.">
+<meta name="keywords" content="video downloader, all video downloader, tiktok video downloader, youtube video downloader, instagram video downloader, facebook video downloader, twitter video downloader, linkedin video downloader, pinterest video downloader, download video mp4, download mp3">
+<link rel="canonical" href="https://videosave.clevora.website/">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="VideoSave — All Video Downloader">
+<meta property="og:description" content="Paste any link and download TikTok, YouTube, Instagram, Facebook, LinkedIn, X and Pinterest videos in MP4 and MP3. Free, no sign-up.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://videosave.clevora.website/">
+<meta name="twitter:card" content="summary_large_image">
+<!-- AdSense ready: add your AdSense code here ONLY after approval. Do not show ads before approval. -->
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"VideoSave","alternateName":"All Video Downloader","url":"https://videosave.clevora.website/","applicationCategory":"MultimediaApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"description":"Download TikTok, YouTube, Instagram, Facebook, LinkedIn, X and Pinterest videos in MP4, 720p, 1080p, 4K and MP3. Free, no sign-up."}
+</script>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%237c3aed'/%3E%3Cpath d='M32 14v22m0 0l-9-9m9 9l9-9M18 44h28' stroke='white' stroke-width='5' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
-<link rel="stylesheet" href="styles.css">
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:#f6f7fb;color:#111827;line-height:1.55}
+a{color:#2563eb}
+.top{position:sticky;top:0;background:#0f172a;color:#fff;padding:12px 20px;display:flex;justify-content:space-between;align-items:center;z-index:10;flex-wrap:wrap;gap:10px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:#fff}
+.brand b{font-size:21px;letter-spacing:-.3px}.brand b span{color:#22d3ee}.brand small{display:block;font-size:11px;opacity:.7;font-weight:600;letter-spacing:.6px;text-transform:uppercase}
+.nav{display:flex;gap:16px;flex-wrap:wrap}.nav a{color:#e5e7eb;text-decoration:none;font-weight:600;font-size:14px}.nav a:hover{color:#fff}
+.hero{background:linear-gradient(135deg,#0f172a 0%,#312e81 55%,#7c3aed 100%);color:#fff;padding:44px 20px 58px;text-align:center}
+.hero-inner{max-width:900px;margin:0 auto}.hero h1{font-size:36px;line-height:1.12;margin:14px 0}.hero h1 span{color:#22d3ee}
+.hero p{color:#e0e7ff;font-size:17px;max-width:680px;margin:0 auto}
+.pill{display:inline-block;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.25);color:#fff;padding:6px 13px;border-radius:999px;font-size:13px;font-weight:700}
+.tabs{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:22px 0 12px}
+.tabs button{border:1px solid rgba(255,255,255,.3);background:rgba(255,255,255,.1);color:#fff;padding:9px 14px;border-radius:999px;cursor:pointer;font-weight:700;font-size:14px}
+.tabs button.active{background:#fff;color:#111827;border-color:#fff}
+.box{background:#fff;color:#111827;border-radius:20px;padding:18px;box-shadow:0 18px 40px rgba(0,0,0,.25);text-align:left}
+.row{display:flex;gap:10px;flex-wrap:wrap}.row input{flex:1;min-width:240px;padding:14px 16px;border:1px solid #d1d5db;border-radius:12px;font-size:16px}
+.row button{padding:14px 22px;border:0;border-radius:12px;background:linear-gradient(90deg,#ec4899,#7c3aed);color:#fff;font-weight:800;font-size:16px;cursor:pointer}
+.row button:disabled{opacity:.6}.hint{font-size:13px;color:#6b7280;margin:10px 0 0}
+.status{margin-top:12px;font-weight:700}.status.err{color:#dc2626}.status.ok{color:#059669}
+.trust{display:flex;gap:18px;justify-content:center;flex-wrap:wrap;margin-top:18px;font-size:13px;font-weight:700;color:#e0e7ff}
+.result{max-width:900px;margin:22px auto;padding:0 16px}.card{background:#fff;border:1px solid #e5e7eb;border-radius:20px;overflow:hidden;display:flex;gap:16px;padding:16px;flex-wrap:wrap;box-shadow:0 10px 30px rgba(0,0,0,.06)}
+.card img.thumb{width:260px;max-width:100%;border-radius:14px;object-fit:cover;background:#eee}
+.card .info{flex:1;min-width:240px}.badge{display:inline-block;background:#111827;color:#fff;padding:4px 10px;border-radius:999px;font-size:12px;text-transform:uppercase;letter-spacing:.5px}
+.dl{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}.dl a{display:inline-block;padding:11px 16px;border-radius:10px;background:#111827;color:#fff;text-decoration:none;font-weight:700}.dl a.green{background:#059669}.dl a.outline{background:#fff;color:#111827;border:1px solid #d1d5db}
+.section{max-width:900px;margin:30px auto;padding:0 16px}.section h2{text-align:center;margin-bottom:6px}.section>p{text-align:center;color:#4b5563}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-top:18px}
+.step,.plat{background:#fff;border:1px solid #e5e7eb;border-radius:16px;padding:16px}.step b{font-size:22px}
+.contact-card{background:#0f172a;color:#fff;border-radius:20px;padding:22px;display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.contact-card h3{margin-top:0}.contact-card a{color:#22d3ee;font-weight:700}
+.contact-card input,.contact-card textarea{width:100%;padding:12px;border-radius:10px;border:1px solid #d1d5db;margin-bottom:10px;font-size:15px;font-family:inherit}
+.contact-card button{padding:12px 20px;border:0;border-radius:10px;background:#ec4899;color:#fff;font-weight:800;cursor:pointer}
+.faq details{background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:14px 16px;margin-bottom:10px}
+footer{background:#0f172a;color:#cbd5e1;padding:28px 20px;text-align:center;font-size:13px}
+footer a{color:#e5e7eb;text-decoration:none;margin:0 8px}
+@media(max-width:700px){.hero h1{font-size:28px}.card img.thumb{width:100%}.contact-card{grid-template-columns:1fr}}
+</style>
 </head>
 <body>
 <header class="top">
@@ -21,7 +68,7 @@
 <section class="hero"><div class="hero-inner">
 <span class="pill">All Video Downloader — no sign-up needed</span>
 <h1>Download TikTok, YouTube,<br>Instagram, LinkedIn <span>&amp; more</span></h1>
-<p>Paste a link, we detect the platform automatically. TikTok gives you the no-watermark HD video. YouTube gives you the title, thumbnail and preview. No account needed.</p>
+<p>Paste a link, we detect the platform automatically, and you get a Download button for every link. No account needed.</p>
 <div class="tabs" id="tabs">
 <button class="active" data-p="all">All platforms</button>
 <button data-p="tiktok">TikTok</button>
@@ -58,12 +105,12 @@
 <h2>Supported platforms</h2><p>One box for all of these.</p>
 <div class="grid">
 <div class="plat"><h3>🎵 TikTok</h3><p>No-watermark MP4 in HD, watermarked MP4, MP3 audio and cover image.</p></div>
-<div class="plat"><h3>▶️ YouTube</h3><p>Title, author, thumbnail and preview. YouTube has no public direct MP4 API — use YouTube Studio for your own videos.</p></div>
-<div class="plat"><h3>📸 Instagram</h3><p>Reels / posts detected. For your own posts, use Instagram's own download / export. No login is asked here.</p></div>
-<div class="plat"><h3>💼 LinkedIn</h3><p>Post / video link detected. Use LinkedIn's own download for your own videos.</p></div>
-<div class="plat"><h3>👍 Facebook</h3><p>Video / Reel link detected. Use Facebook's own save option for your own videos.</p></div>
-<div class="plat"><h3>𝕏 X / Twitter</h3><p>Post link detected, with a direct link back to the original post.</p></div>
-<div class="plat"><h3>📌 Pinterest</h3><p>Pin link detected, with a direct link back to the original pin.</p></div>
+<div class="plat"><h3>▶️ YouTube</h3><p>Download Video (720p) + Audio, plus title, thumbnail and preview.</p></div>
+<div class="plat"><h3>📸 Instagram</h3><p>Download Video button for Reels / posts — direct where possible, otherwise one-click via Cobalt.</p></div>
+<div class="plat"><h3>💼 LinkedIn</h3><p>Download Video button for posts — direct video file where found, otherwise one-click via Cobalt.</p></div>
+<div class="plat"><h3>👍 Facebook</h3><p>Download Video button for videos / Reels — direct where possible, otherwise one-click via Cobalt.</p></div>
+<div class="plat"><h3>𝕏 X / Twitter</h3><p>Download Video / photo directly from the post.</p></div>
+<div class="plat"><h3>📌 Pinterest</h3><p>Download Video / image button for pins — direct where found, otherwise one-click via Cobalt.</p></div>
 </div>
 </section>
 
@@ -71,12 +118,25 @@
 <h2>FAQ</h2><p>Quick answers before you download.</p>
 <div class="faq">
 <details open><summary><b>Does TikTok download really work without watermark?</b></summary><p>Yes, for public TikTok videos. This site uses the public tikwm API, the same kind of endpoint many TikTok downloaders use, to get the HD no-watermark file TikTok itself serves.</p></details>
-<details><summary><b>Why doesn't YouTube give a direct MP4 here?</b></summary><p>YouTube does not offer a public download API. Any site that promises a direct YouTube MP4 is using an unofficial backend that breaks often. This site is honest about that: it shows the official preview, and for your own videos you can download from YouTube Studio, or use yt-dlp locally.</p></details>
+<details><summary><b>How does download work for every platform?</b></summary><p>Every link now gets a Download button. TikTok uses tikwm, YouTube uses Invidious (video + audio files), X uses vxtwitter, and Instagram / Facebook / LinkedIn / Pinterest try a direct video-file search first and then open Cobalt in one click if the platform blocks direct access. Private or login-only posts cannot be downloaded by any browser-only site — for those, use that app's own download.</p></details>
 <details><summary><b>Do I need an account?</b></summary><p>No. No sign-up, no password, and no private accounts. Private or login-only posts cannot be downloaded here, by design.</p></details>
 <details><summary><b>Can I re-upload someone else's video?</b></summary><p>Only with their permission. Removing a watermark does not remove copyright. Keep the creator's credit, or you risk a copyright block.</p></details>
 </div>
 </section>
 
+
+<section class="section" id="downloaders">
+<h2>Download videos from every platform</h2><p>Search-friendly guides — same paste box works for all of these.</p>
+<div class="grid">
+<div class="plat" id="youtube-downloader"><h3>YouTube Video Downloader</h3><p>Download YouTube videos in MP4, 720p, 1080p, 4K and MP3 audio. Paste a YouTube link, choose quality, download.</p></div>
+<div class="plat" id="tiktok-downloader"><h3>TikTok Video Downloader</h3><p>Download TikTok videos without watermark in HD MP4, plus MP3 audio and cover image. No account needed.</p></div>
+<div class="plat" id="instagram-downloader"><h3>Instagram Video Downloader</h3><p>Download Instagram Reels and videos in MP4. Paste a Reel link, get a Download button in seconds.</p></div>
+<div class="plat" id="facebook-downloader"><h3>Facebook Video Downloader</h3><p>Download Facebook videos and Reels in MP4, HD where available.</p></div>
+<div class="plat" id="twitter-downloader"><h3>X / Twitter Video Downloader</h3><p>Download X videos and GIFs in MP4 HD from any public post link.</p></div>
+<div class="plat" id="linkedin-downloader"><h3>LinkedIn Video Downloader</h3><p>Download LinkedIn videos from public posts in MP4.</p></div>
+<div class="plat" id="pinterest-downloader"><h3>Pinterest Video Downloader</h3><p>Download Pinterest videos and images from any public pin link.</p></div>
+</div>
+</section>
 <section class="section" id="contact">
 <h2>Contact us</h2><p>Questions, a broken link, or a platform request? Write to us.</p>
 <div class="contact-card">
@@ -101,10 +161,181 @@
 </main>
 
 <footer>
-<a href="#top">Downloader</a> • <a href="#platforms">Platforms</a> • <a href="#faq">FAQ</a> • <a href="#contact">Contact</a>
+<a href="#top">Downloader</a> • <a href="#platforms">Platforms</a> • <a href="#faq">FAQ</a> • <a href="#contact">Contact</a> • <a href="privacy.html">Privacy Policy</a> • <a href="terms.html">Terms</a> • <a href="dmca.html">DMCA</a>
 <p style="margin:12px 0 0">© 2026 VideoSave by Muhammad Sanwal. For your own content and content you have permission to use.<br>Contact: <a href="mailto:muhammadsanwal3620@gmail.com" style="color:#22d3ee">muhammadsanwal3620@gmail.com</a></p>
 </footer>
 
-<script src="script.js"></script>
+<script>
+const BACKEND_URL = ''; // SET THIS when backend is live, e.g. 'https://videosave-backend.railway.app' — leave empty to use free public APIs
+function detectPlatform(u){
+  u=(u||'').toLowerCase();
+  if(u.includes('tiktok.com')||u.includes('vt.tiktok.com')) return 'tiktok';
+  if(u.includes('youtube.com')||u.includes('youtu.be')) return 'youtube';
+  if(u.includes('instagram.com')) return 'instagram';
+  if(u.includes('facebook.com')||u.includes('fb.watch')) return 'facebook';
+  if(u.includes('linkedin.com')) return 'linkedin';
+  if(u.includes('twitter.com')||u.includes('x.com')) return 'x';
+  if(u.includes('pinterest.com')||u.includes('pin.it')) return 'pinterest';
+  return 'unknown';
+}
+function esc(s){return String(s||'').replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]})}
+function sendContact(e){
+  e.preventDefault();
+  var name=document.getElementById('cName').value, email=document.getElementById('cEmail').value, msg=document.getElementById('cMsg').value;
+  var subject=encodeURIComponent('VideoSave contact from '+name);
+  var body=encodeURIComponent('Name: '+name+'\nEmail: '+email+'\n\n'+msg);
+  window.location.href='mailto:muhammadsanwal3620@gmail.com?subject='+subject+'&body='+body;
+  document.getElementById('cNote').textContent='Opening your email app to send the message…';
+}
+document.querySelectorAll('#tabs button').forEach(function(b){
+  b.onclick=function(){
+    document.querySelectorAll('#tabs button').forEach(function(x){x.classList.remove('active')});
+    b.classList.add('active');
+    var p=b.dataset.p;
+    var ex={tiktok:'https://www.tiktok.com/@username/video/1234567890',youtube:'https://www.youtube.com/watch?v=dQw4w9WgXcQ',instagram:'https://www.instagram.com/reel/xxxxxxxx/',facebook:'https://www.facebook.com/reel/xxxxxxxx/',linkedin:'https://www.linkedin.com/posts/xxxxxxxx',x:'https://x.com/username/status/1234567890',pinterest:'https://www.pinterest.com/pin/1234567890/'};
+    if(ex[p]) document.getElementById('urlInput').placeholder='Example: '+ex[p];
+  };
+});
+function cobaltLink(u){ return 'https://cobalt.tools/?u=' + encodeURIComponent(u); }
+function dlBtns(list){
+  return '<div class="dl">' + list.map(function(b){
+    return '<a class="' + (b.cls||'') + '" href="' + esc(b.href) + '" target="_blank" rel="noopener">' + esc(b.label) + '</a>';
+  }).join('') + '</div>';
+}
+function showCard(html){ var r=document.getElementById('result'); r.innerHTML=html; r.style.display='block'; }
+async function tryGenericMp4(url){
+  try{
+    var res = await fetch('https://api.allorigins.win/raw?url=' + encodeURIComponent(url), {signal: AbortSignal.timeout(12000)});
+    var html = await res.text();
+    var found = [];
+    var re = /https?:\/\/[^"'\\\s]+?\.mp4[^"'\\\s]*/gi;
+    var m;
+    while((m = re.exec(html)) !== null){
+      var u = m[0].replace(/\\u0026/g,'&').replace(/&amp;/g,'&');
+      if(found.indexOf(u) === -1) found.push(u);
+      if(found.length >= 3) break;
+    }
+    return found;
+  }catch(e){ return []; }
+}
+async function handleDownload(){
+  var url=document.getElementById('urlInput').value.trim();
+  var status=document.getElementById('status');
+  var result=document.getElementById('result');
+  var btn=document.getElementById('goBtn');
+  if(!url){status.className='status err';status.textContent='Please paste a link first.';return;}
+  var platform=detectPlatform(url);
+  if(platform==='unknown'){status.className='status err';status.textContent='Could not detect a supported platform from that link. Try a TikTok, YouTube, Instagram, Facebook, LinkedIn, X or Pinterest link.';return;}
+  status.className='status ok';status.textContent='Checking '+platform+'… Download link nikal raha hai…';btn.disabled=true;result.style.display='none';
+  try{
+    if(BACKEND_URL){
+      try{
+        var b = await fetch(BACKEND_URL + '/api/info?url=' + encodeURIComponent(url)).then(function(r){return r.json();});
+        if(b.ok){
+          var fb = [];
+          (b.formats.combined||[]).forEach(function(f){ fb.push({href:f.url, label:'Download MP4 '+(f.resolution||''), cls:'green'}); });
+          var vs = (b.formats.video_only||[]).slice().sort(function(a,b2){return (b2.height||0)-(a.height||0);});
+          vs.forEach(function(f){ fb.push({href:f.url, label:'Download Video '+(f.height||'')+'p ↓'}); });
+          (b.formats.audio_only||[]).slice(0,3).forEach(function(f){ fb.push({href:f.url, label:'Download Audio '+(f.ext||'').toUpperCase(), cls:'outline'}); });
+          fb.push({href:cobaltLink(url), label:'Download via Cobalt ↗', cls:'outline'});
+          status.textContent='Found it ✓ — Format choose karein, Download button neeche hai';
+          showCard('<div class="card">'
+            +(b.thumbnail?'<img class="thumb" src="'+esc(b.thumbnail)+'" alt="Thumbnail">':'')
+            +'<div class="info"><span class="badge">'+esc(platform)+'</span><h2 style="margin:10px 0 6px">'+esc(b.title||'Video')+'</h2>'
+            +'<p style="color:#4b5563;margin:0">'+esc(b.uploader||'')+'</p>'
+            +dlBtns(fb) + '</div></div>');
+          btn.disabled=false; return;
+        }
+      }catch(e){}
+    }
+    if(platform==='tiktok'){
+      var res=await fetch('https://www.tikwm.com/api/?url='+encodeURIComponent(url));
+      var data=await res.json();
+      if(data.code!==0) throw new Error('TikTok API: '+(data.msg||'lookup failed'));
+      var d=data.data||{}, a=d.author||{};
+      status.textContent='Found it ✓ — Download button neeche hai';
+      var btns=[];
+      if(d.play) btns.push({href:d.play, label:'Download No Watermark HD ↓', cls:'green'});
+      if(d.wmplay) btns.push({href:d.wmplay, label:'With Watermark'});
+      if(d.music) btns.push({href:d.music, label:'Audio MP3', cls:'outline'});
+      if(d.cover) btns.push({href:d.cover, label:'Cover Image', cls:'outline'});
+      btns.push({href:cobaltLink(url), label:'Try Cobalt Download ↗', cls:'outline'});
+      showCard('<div class="card">'
+        +(d.cover?'<img class="thumb" src="'+esc(d.cover)+'" alt="Cover">':'')
+        +'<div class="info"><span class="badge">TikTok</span><h2 style="margin:10px 0 6px">'+esc(d.title||'TikTok video')+'</h2>'
+        +'<p style="color:#4b5563;margin:0">@'+esc(a.unique_id||'')+' • '+(a.nickname?esc(a.nickname):'')+(d.duration?' • '+esc(d.duration)+' sec':'')+'</p>'
+        +dlBtns(btns)
+        +'<p style="font-size:13px;color:#6b7280">If the video opens in a player instead of downloading, tap ⋮ in the player and choose Download, or long-press and Save video.</p></div></div>');
+    } else if(platform==='youtube'){
+      var vid=''; var m=url.match(/[?&]v=([^&]+)/); if(m) vid=m[1]; else {var s=url.match(/youtu\.be\/([^?&]+)/); if(s) vid=s[1]; else {var sh=url.match(/shorts\/([^?&\/]+)/); if(sh) vid=sh[1];}}
+      if(!vid) throw new Error('YouTube video ID nahi mila');
+      var o=null;
+      try{ o=await fetch('https://www.youtube.com/oembed?url='+encodeURIComponent(url)+'&format=json').then(function(r){return r.json()}); }catch(e){}
+      var inv=null;
+      try{ inv=await fetch('https://yt.chocolatemoo53.com/api/v1/videos/'+vid).then(function(r){return r.json()}); }catch(e){}
+      var btns=[];
+      var title = (o && o.title) || (inv && inv.title) || 'YouTube video';
+      var author = (o && o.author_name) || (inv && inv.author) || '';
+      var thumb = (o && o.thumbnail_url) || ('https://i.ytimg.com/vi/'+vid+'/hqdefault.jpg');
+      if(inv){
+        var combined = (inv.formatStreams||[]).filter(function(f){return f.url;});
+        combined.forEach(function(f){ btns.push({href:f.url, label:'Download MP4 '+(f.qualityLabel||''), cls:'green'}); });
+        var v720 = (inv.adaptiveFormats||[]).find(function(f){return String(f.itag)==='136' && f.url;});
+        var v360 = (inv.adaptiveFormats||[]).find(function(f){return String(f.itag)==='134' && f.url;});
+        var aud = (inv.adaptiveFormats||[]).find(function(f){return String(f.itag)==='140' && f.url;});
+        if(!combined.length && v720) btns.push({href:v720.url, label:'Download Video 720p ↓ (video only)', cls:'green'});
+        if(!combined.length && v360) btns.push({href:v360.url, label:'Download Video 360p ↓'});
+        if(aud) btns.push({href:aud.url, label:'Download Audio M4A', cls:'outline'});
+      }
+      btns.push({href:cobaltLink(url), label:'Download via Cobalt ↗ (merged MP4)', cls:'outline'});
+      status.textContent='Found it ✓ — Download button neeche hai';
+      showCard('<div class="card">'
+        +'<img class="thumb" src="'+esc(thumb)+'" alt="Thumbnail">'
+        +'<div class="info"><span class="badge">YouTube</span><h2 style="margin:10px 0 6px">'+esc(title)+'</h2>'
+        +'<p style="color:#4b5563;margin:0">'+esc(author)+'</p>'
+        +'<div style="margin-top:12px"><iframe width="100%" height="220" style="border:0;border-radius:12px" src="https://www.youtube.com/embed/'+esc(vid)+'" allowfullscreen></iframe></div>'
+        +dlBtns(btns)
+        +'<p style="font-size:13px;color:#6b7280">Note: YouTube ki 720p video-only file aur audio alag hoti hai. Agar combined MP4 chahiye to "Download via Cobalt" button use karein, wo merged file dega.</p></div></div>');
+    } else if(platform==='x'){
+      var idm=url.match(/status\/(\d+)/);
+      if(!idm) throw new Error('X post ID nahi mila');
+      var vx=await fetch('https://api.vxtwitter.com/Twitter/status/'+idm[1]).then(function(r){return r.json()});
+      var media = (vx.media_extended||[]).length ? vx.media_extended : (vx.mediaURLs||[]).map(function(u){return {url:u, type:'photo'};});
+      if(!media.length) throw new Error('Is post me koi media nahi mila');
+      var btns = media.map(function(mm, i){
+        var u = mm.url || mm;
+        var isVid = (mm.type && mm.type.indexOf('video')>=0) || /\.mp4/i.test(u);
+        return {href:u, label:(isVid ? 'Download Video ' : 'Download Photo ') + (i+1) + ' ↓', cls: i===0 ? 'green' : ''};
+      });
+      btns.push({href:cobaltLink(url), label:'Download via Cobalt ↗', cls:'outline'});
+      status.textContent='Found it ✓ — Download button neeche hai';
+      showCard('<div class="card"><div class="info"><span class="badge">X / Twitter</span><h2 style="margin:10px 0 6px">'+esc(vx.text||'X post')+'</h2>'
+        +'<p style="color:#4b5563;margin:0">@'+esc(vx.user_screen_name||'')+'</p>'
+        +dlBtns(btns) + '</div></div>');
+    } else {
+      var label={instagram:'Instagram',facebook:'Facebook',linkedin:'LinkedIn',pinterest:'Pinterest'}[platform]||platform;
+      status.textContent='Checking '+label+'… direct video file dhoond raha hoon…';
+      var mp4s = await tryGenericMp4(url);
+      var btns=[];
+      mp4s.forEach(function(u,i){ btns.push({href:u, label:'Download Video '+(i+1)+' ↓', cls: i===0 ? 'green' : ''}); });
+      btns.push({href:cobaltLink(url), label:'Download via Cobalt ↗ (1 click)', cls:'green'});
+      btns.push({href:url, label:'Open original post ↗', cls:'outline'});
+      status.textContent='Download button ready ✓';
+      showCard('<div class="card"><div class="info"><span class="badge">'+esc(label)+'</span><h2 style="margin:10px 0 6px">'+esc(label)+' video download</h2>'
+        +(mp4s.length ? '<p style="color:#059669;font-weight:700">Direct video file mil gaya — neeche Download button dabayein.</p>' : '<p style="color:#4b5563">Is platform ne direct file block ki hui hai, is liye "Download via Cobalt" button dabayein — Cobalt ka page khulega, wahan se video 1 click me download ho jayegi. Private / login wali posts kisi bhi browser site se download nahi hoti.</p>')
+        +dlBtns(btns) + '</div></div>');
+    }
+  }catch(e){
+    status.className='status err';status.textContent='Direct link nahi mila: '+e.message+'. Neeche Cobalt button se try karein.';
+    showCard('<div class="card"><div class="info"><span class="badge">'+esc(platform)+'</span><h2 style="margin:10px 0 6px">Download via Cobalt</h2>'
+      +'<p style="color:#4b5563">Is link ka direct file abhi nahi mila, lekin Cobalt se download ho sakta hai. Button dabayein, Cobalt page khulega aur wahan Download dabayein.</p>'
+      +dlBtns([{href:cobaltLink(url), label:'Download via Cobalt ↗', cls:'green'}, {href:url, label:'Open original post ↗', cls:'outline'}])
+      +'</div></div>');
+  }
+  btn.disabled=false;
+}
+
+document.getElementById('urlInput').addEventListener('keydown',function(e){if(e.key==='Enter') handleDownload();});
+</script>
 </body>
 </html>
